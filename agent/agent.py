@@ -1,3 +1,4 @@
+
 class Agent:
     def __init__(self, config, obs):
         self.config = config
@@ -20,12 +21,6 @@ class Agent:
     @staticmethod
     def check_window(window, num_discs, piece, config):
         return (window.count(piece) == num_discs and window.count(0) == config.inarow-num_discs)
-
-    @staticmethod
-    def score_move(grid, col, mark, config):
-        next_grid = Agent.drop_piece(grid, col, mark, config)
-        score = Agent.get_heuristic(next_grid, mark, config)
-        return score
 
     @staticmethod
     def count_windows(grid, num_discs, piece, config):
