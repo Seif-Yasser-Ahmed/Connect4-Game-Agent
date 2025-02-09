@@ -1,7 +1,7 @@
 import inspect
 import os
 import random
-from utils import Agent
+from agent.classic_agent import classic_agent as Agent
 
 
 def my_agent(obs, config):

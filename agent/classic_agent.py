@@ -1,28 +1,8 @@
+from agent import Agent
 import numpy as np
-import random
 
 
-class Config:
-    def __init__(self):
-        self.columns = 7
-        self.rows = 6
-        self.inarow = 4
-
-
-class Agent():
-    def __init__(self, config, obs):
-        self.config = config
-        self.obs = obs
-
-    @staticmethod
-    def drop_piece(grid, col, piece, config):
-        next_grid = grid.copy()
-        for row in range(config.rows-1, -1, -1):
-            if next_grid[row][col] == 0:
-                break
-        next_grid[row][col] = piece
-        return next_grid
-
+class classic_agent(Agent):
     @staticmethod
     def check_winning_move(obs, config, col, piece):
         # Convert the board to a 2D grid
