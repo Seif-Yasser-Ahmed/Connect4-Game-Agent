@@ -22,6 +22,7 @@ def render_game(env, agent1, agent2):
 
 
 def test_my_agent(my_agent):
+    # will work on kaggle
     from kaggle_environments import env
     env = make("connectx", debug=True)
     render_game(env, my_agent, "random")
