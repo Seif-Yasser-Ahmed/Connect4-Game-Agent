@@ -4,7 +4,6 @@ The implemented agents include:
 - A **Classic Agent** that follows a simple heuristic to make moves.
 - A **Heuristic Agent** using a one-step lookahead strategy.
 - A **Minimax Agent** that applies the Minimax algorithm with depth-limited search.
-- An **Alpha-Beta Pruning Agent** that optimizes Minimax by pruning unnecessary branches.
 
 These agents are designed to play the Connect4 game within the Kaggle environment.
 
@@ -25,7 +24,6 @@ connect4-game-agent/
     ├── classic_agent.py
     ├── heuristic.py
     ├── minmax.py
-    ├── alphabeta.py
     ├── utils.py
 ```
 
